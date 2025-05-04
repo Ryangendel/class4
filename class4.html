@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<style>
+    .container-flexbox {
+        display: grid
+    }
+
+    div.first.info.moreinfo {
+        background: blue
+    }
+
+    .bold-font {
+        background: blue
+    }
+
+    .long-font {
+        background: blue
+    }
+
+    img[src*="ctfassets"] {
+        border: 4px dotted blue
+    }
+
+    .item {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    li:nth-child(odd) {
+        background: yellow
+    }
+
+    .block {
+        width: 200px;
+        height: 150px;
+        background-color: red;
+        color: red;
+        float: left
+    }
+
+    .block1 {
+        width: 200px;
+        height: 150px;
+        background-color: blue;
+        color: red;
+        float: left
+    }
+
+    .block2 {
+        width: 200px;
+        height: 150px;
+        background-color: green;
+        color: red;
+        clear: left;
+        float: left
+    }
+
+    .block3 {
+        width: 200px;
+        height: 150px;
+        background-color: black;
+        color: red;
+        float: left
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr 1fr 4fr);
+        background-color: #e0f7fa;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 700px) {
+        .example{
+            background:blue;
+        }
+    }
+
+    .hello2 {}
+
+    .hello4 {}
+</style>
+
+
+<body>
+    <!-- <ul class="list">
+        <li class="item item1">one</li>
+        <li class="item item2">two</li>
+        <li class="item item3">three</li>
+        <li class="item item4">four</li>
+        <li class="item item5">five</li>
+    </ul> -->
+
+    <!-- <div class="block"></div>
+    <div class="block1"></div>
+    <div class="block2"></div>
+    <div class="block3"></div> -->
+    <!-- <div class="grid-container">
+        <div class="hello1">hello</div>
+        <div class="hello2">hello</div>
+        <div class="hello3">hello</div>
+        <div class="hello4">hello</div>
+
+        <div class="hello1">hello</div>
+        <div class="hello2">hello</div>
+        <div class="hello3">hello</div>
+        <div class="hello4">hello</div>
+
+        <div class="hello1">hello</div>
+        <div class="hello2">hello</div>
+        <div class="hello3">hello</div>
+        <div class="hello4">hello</div>
+
+        <div class="hello1">hello</div>
+        <div class="hello2">hello</div>
+        <div class="hello3">hello</div>
+        <div class="hello4">hello</div>
+
+        <div class="hello1">hello</div>
+        <div class="hello2">hello</div>
+        <div class="hello3">hello</div>
+        <div class="hello4">hello</div>
+    </div> -->
+<div class="example">hello</div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/001_American_Pit_Bull_Terrier.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/001_American_Pit_Bull_Terrier.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/001_American_Pit_Bull_Terrier.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://www.adobe.com/creativecloud/design/discover/media_18ab26022d50612e7fbcf9111e21a4f7062832524.jpg?width=750&format=jpg&optimize=medium" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-info">Secondary</button>
+    <button type="button" class="btn btn-primary">Success</button>
+    <button type="button" class="btn btn-primary">Danger</button>
+    <button type="button" class="btn btn-primary">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+
+
+
+    <!-- <img src="https://images.ctfassets.net/m5ehn3s5t7ec/3LlwQXcjlcCtNFqg7rswmx/0f268311a5bf518cc72fa1b5a3f957b1/Bulldog_Price.jpeg" alt="Girl in a jacket" width="500" height="600"> -->
+    <!-- <div class="bold-font">hello</div>
+   <div class="bold-font long-font moreinfo">
+        <section>
+            <nav class="navinfo">
+                some content
+            </nav>
+        </section>
+   </div> -->
+</body>
+
+</html>
